@@ -3,6 +3,7 @@ import "./App.css";
 import Login from "./components/Login";
 import { getTokenFromUlr } from "./spotify";
 import SpotityWebApi from "spotify-web-api-js";
+import Player from "./components/Player";
 
 const spotify = new SpotityWebApi();
 
@@ -17,11 +18,19 @@ function App() {
     if (_token) {
       setToken(_token);
       spotify.setAccessToken(_token);
+      spotify.getMe().then((user) => {
+        console.log("person", user);
+      });
     }
     console.log("i have a token >> ", token);
   }, []);
 
-  return <div className='app'>{token ? <h1>logged in</h1> : <Login />}</div>;
+  return <div className='app'>
+    {token ? 
+    <Player/>
+    : <Login />}
+  
+  </div>;
 }
 
 export default App;
