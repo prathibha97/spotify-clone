@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   height: 65px;
-  width: 100%;
+  width: 97%;
   background-color: #282828;
   padding: 20px;
   display: flex;
@@ -25,4 +25,8 @@
 
 .footer__right {
   flex: 0.3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
