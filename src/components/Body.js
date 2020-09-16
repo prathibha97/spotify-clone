@@ -19,11 +19,14 @@ function Body({ spotify }) {
       </div>
       <div className='body__songs'>
         <div className='body__icons'>
-          <PlayCircleFilled className='body__shuffle'/>
-          <Favorite className='large'/>
-          <MoreHoriz/>
+          <PlayCircleFilled className='body__shuffle' />
+          <Favorite className='large' />
+          <MoreHoriz />
         </div>
         {/* list of songs */}
+        {discover_weekly?.tracks.items.map((item) => (
+          <SongRow track={item.track} />
+        ))}
       </div>
     </div>
   );
