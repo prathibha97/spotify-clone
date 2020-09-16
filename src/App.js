@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Login from "./components/Login";
 import { getTokenFromUlr } from "./spotify";
@@ -9,7 +9,7 @@ import { StateProviderValue } from "./context/StateProvider";
 const spotify = new SpotityWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = StateProviderValue();
+  const [{ token }, dispatch] = StateProviderValue();
 
   // run code based on a given condition
   useEffect(() => {

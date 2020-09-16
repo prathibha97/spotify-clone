@@ -3,6 +3,7 @@ import React from "react";
 import { StateProviderValue } from "../context/StateProvider";
 import "../css/Body.css";
 import Header from "./Header";
+import SongRow from "./SongRow";
 
 function Body({ spotify }) {
   const [{ discover_weekly }, dispatch] = StateProviderValue();
