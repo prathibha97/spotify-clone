@@ -1,12 +1,17 @@
-import React from 'react';
-import '../css/Player.css';
+import React from "react";
+import "../css/Player.css";
 
 function Player() {
-    return (
-        <div className='player'>
-            <h1>player</h1>
-        </div>
-    )
+  return (
+    <div className='player'>
+      <div className='player__body'>
+        {/* sidebar */}
+        {/* body */}
+      </div>
+
+      {/* footer */}
+    </div>
+  );
 }
 
-export default Player
+export default Player;
