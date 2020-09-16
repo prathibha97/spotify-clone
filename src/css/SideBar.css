@@ -14,3 +14,14 @@
     padding: 10px;
     margin-right: auto;
 }
+
+.sideBar__title{
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.sideBar hr{
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
